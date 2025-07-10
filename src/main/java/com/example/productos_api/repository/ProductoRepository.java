@@ -1,5 +1,17 @@
 package com.example.productos_api.repository;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+import org.springframework.stereotype.Repository;
+
+import com.example.productos_api.model.Producto;
+
+import jakarta.annotation.PostConstruct;
+
 @Repository
 public class ProductoRepository {
     private final Map<Long, Producto> productos = new HashMap<>();
